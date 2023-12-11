@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather APP | Tech-A-Intern</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+        <form class="search-box">
+            <i class='bx bxs-map'></i>
+            <input type="text" id="location" class="location" placeholder="Enter location...">
+            <button type="submit" class='bx bx-search-alt'></button>
+        </form>
+        <div class="weather-container">
+            <img src="assets/weather.png" alt="weather">
+            <p class="temperature"><span class="value">16</span> °C</p>
+            <p class="description">Broken Clouds</p>
+            <p class="location"><i class='bx bxs-map'></i> <span class="region"></span>, <span class="country"></span></p>
+        </div>
+        <div class="bottom-detail">
+            <div class="humidity">
+                <i class='bx bxs-droplet-half'></i>
+                <div class="humidity_detail">
+                    <p><span class="value"></span>%</p>
+                    <p>Humidity</p>
+                </div>
+            </div>
+            <div class="pressure">
+                <i class='bx bx-water'></i>
+                <div class="pressure_detail">
+                    <p><span class="value"></span> in</p>
+                    <p>Air Pressure</p>
+                </div>
+            </div>
+            <div class="wind-speed">
+                <i class='bx bx-wind'></i>
+                <div class="speed_detail">
+                    <p><span class="value"></span>Km/h</p>
+                    <p>Wind Speed</p>
+                </div>
+            </div>
+        </div>
+        <div class="not-found">
+            <img src="assets/404.png">
+            <p></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -8,7 +8,7 @@ const errorMessage = document.querySelector('.not-found p');
 search.addEventListener('submit', (event) => {
     event.preventDefault();
     console.log("submitted")
-    const APIKey = 'd055e4ea227941ba9e475107231112';
+    const APIKey = 'insert api key here';
     const location = document.querySelector('.search-box input').value;
 
     if (location == '')

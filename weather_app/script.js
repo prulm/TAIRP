@@ -18,7 +18,7 @@ search.addEventListener('submit', (event) => {
 
         async function fetchWeatherData(location) {
             try {
-                const response = await fetch(`https://api.weatherapi.com/v1/current.json?q=${location}&key=d055e4ea227941ba9e475107231112`);
+                const response = await fetch(`https://api.weatherapi.com/v1/current.json?q=${location}&key=${APIKey}`);
                 const json = await response.json();
                 return json;
             } catch (error) {
